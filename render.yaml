@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: loy-pisowifi-messenger-ai
+    runtime: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: FACEBOOK_VERIFY_TOKEN
+        sync: false
+      - key: FACEBOOK_APP_SECRET
+        sync: false
+      - key: FACEBOOK_PAGE_ACCESS_TOKEN
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-4o-mini
+      - key: GRAPH_API_VERSION
+        value: v23.0
+      - key: BUSINESS_PHONE
+        value: "09999690008"
+      - key: FACEBOOK_PAGE_NAME
+        value: "LOY'S PISOWIFI Computer Digital Services Bohol"

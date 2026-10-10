@@ -1,0 +1,13 @@
+{
+  "name": "loys-pisowifi-messenger-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bisaya AI customer support for LOY'S PISOWIFI via the official Meta Messenger Platform",
+  "type": "module",
+  "scripts": { "start": "node app.js", "dev": "node --watch app.js" },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "express": "^4.21.2",
+    "openai": "^4.86.1"
+  }
+}
